@@ -1,0 +1,59 @@
+Pygame Extra 1.6 BETA
+=========
+
+As of Today Pygame Extra 1.6 is only in beta, but here are some things we can
+expect in it:
+
+Image Handleing
+---------------
+
+Sprites
+Settings
+Surfaces
+Image Handleing
+You can import images and set their size and position, the function also
+allows you to set the size and position, aswell as automatically calculating
+the rect witch means the result is returned in the format [Surface, Rect],
+all other functions that use images will only except this format, and it's
+really for the better.
+
+Sprites
+-------
+
+The most majour part of the Pygame Extra 1.6 update is it's sprites, sprites
+can be rotated, scaled, moved and even made dragabble and made animated,
+these functions are gonna be all avaliable in the example project provided
+with pygame extra 1.6. Some of the included variables are:
+
+* image - the main image and rect of the sprite
+* rotation - this is the value that stores the current rotation of a given
+  sprite
+* position - this tuple stores the X and Y of a given sprite
+* rect - aka the size of the sprite or it's container box size
+* size - the size multyplier
+* new - this is the updated surface, as the original is required to increse
+  quality and stop lag and crashes
+* refresh - this can be used per given sprite to remmember if the sprite
+  should be redrawn or not, this does not effect the code, and is only a per sprite True or False value
+* Currently there is some functions that are incomplete, but we hope to finish soon!
+
+Settings
+--------
+These Settings are gonna be a way to control pygame extra, like the delay of
+buttons, the auto update, and those kinds of things, we will expand on this
+as needed.
+
+Surfaces
+--------
+
+As of now we have no plans for surfaces but we are planning to add some
+functionallity of surfaces to pygame extra 1.6!
+
+Download and Install
+----------
+
+Downloading the current version of pygame extra witch is currently beta, just do:
+
+.. code-block:: bash
+
+   pip3 install pygameextra

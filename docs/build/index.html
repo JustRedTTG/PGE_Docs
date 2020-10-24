@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pygame Extra 1.6 BETA &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Getting Started" href="getting-started.html" />
+    <link rel="prev" title="Table of Contents" href="contents.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="contents.html" title="Table of Contents"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Pygame Extra 1.6 BETA</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pygame-extra-1-6-beta">
+<h1>Pygame Extra 1.6 BETA<a class="headerlink" href="#pygame-extra-1-6-beta" title="Permalink to this headline">¶</a></h1>
+<p>As of Today Pygame Extra 1.6 is only in beta, but here are some things we can
+expect in it:</p>
+<div class="section" id="image-handleing">
+<h2>Image Handleing<a class="headerlink" href="#image-handleing" title="Permalink to this headline">¶</a></h2>
+<p>Sprites
+Settings
+Surfaces
+Image Handleing
+You can import images and set their size and position, the function also
+allows you to set the size and position, aswell as automatically calculating
+the rect witch means the result is returned in the format [Surface, Rect],
+all other functions that use images will only except this format, and it’s
+really for the better.</p>
+</div>
+<div class="section" id="sprites">
+<h2>Sprites<a class="headerlink" href="#sprites" title="Permalink to this headline">¶</a></h2>
+<p>The most majour part of the Pygame Extra 1.6 update is it’s sprites, sprites
+can be rotated, scaled, moved and even made dragabble and made animated,
+these functions are gonna be all avaliable in the example project provided
+with pygame extra 1.6. Some of the included variables are:</p>
+<ul class="simple">
+<li><p>image - the main image and rect of the sprite</p></li>
+<li><p>rotation - this is the value that stores the current rotation of a given
+sprite</p></li>
+<li><p>position - this tuple stores the X and Y of a given sprite</p></li>
+<li><p>rect - aka the size of the sprite or it’s container box size</p></li>
+<li><p>size - the size multyplier</p></li>
+<li><p>new - this is the updated surface, as the original is required to increse
+quality and stop lag and crashes</p></li>
+<li><p>refresh - this can be used per given sprite to remmember if the sprite
+should be redrawn or not, this does not effect the code, and is only a per sprite True or False value</p></li>
+<li><p>Currently there is some functions that are incomplete, but we hope to finish soon!</p></li>
+</ul>
+</div>
+<div class="section" id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
+<p>These Settings are gonna be a way to control pygame extra, like the delay of
+buttons, the auto update, and those kinds of things, we will expand on this
+as needed.</p>
+</div>
+<div class="section" id="surfaces">
+<h2>Surfaces<a class="headerlink" href="#surfaces" title="Permalink to this headline">¶</a></h2>
+<p>As of now we have no plans for surfaces but we are planning to add some
+functionallity of surfaces to pygame extra 1.6!</p>
+</div>
+<div class="section" id="download-and-install">
+<h2>Download and Install<a class="headerlink" href="#download-and-install" title="Permalink to this headline">¶</a></h2>
+<p>Downloading the current version of pygame extra witch is currently beta, just do:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip3 install pygameextra
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pygame Extra 1.6 BETA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#image-handleing">Image Handleing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sprites">Sprites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#surfaces">Surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-install">Download and Install</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="contents.html" title="Table of Contents"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Pygame Extra 1.6 BETA</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>
