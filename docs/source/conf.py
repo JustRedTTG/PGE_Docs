@@ -14,4 +14,4 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 html_static_path = ['_static']
-html_theme = 'groundwork'
+html_theme = 'classic'
