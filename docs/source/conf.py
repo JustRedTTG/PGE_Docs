@@ -5,6 +5,10 @@ release = '1.6'
 extensions = [
     'sphinx.ext.todo',
     'sphinx.ext.githubpages',
+    "sphinx.ext.autodoc",
+    "sphinx.ext.extlinks",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.viewcode",
 ]
 master_doc = "contents"
 templates_path = ['_templates']
