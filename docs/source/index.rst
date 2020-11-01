@@ -5,8 +5,8 @@ Welcome to the Pygame Extra docs!
 
 .. image:: _static/logo.png
     :align: center
-    :width: 500
-    :height: 500
+    :width: 500px
+    :height: 500px
 
 Usage
 -----
