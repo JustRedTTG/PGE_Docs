@@ -2,9 +2,11 @@ Table of Contents
 =================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 10
 
     index
+    
+    getting-started
     
     drawing
 
