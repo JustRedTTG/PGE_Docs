@@ -59,9 +59,11 @@ Let's put all that knowledge into making a sprite!
 
     import pygameextra as pe
     pe.display.make((500, 500), 'My Game')
-    crown = pe.sprite.make('example.jpeg',(50,50),(250,250), 70)
+    pe.fill.full((255,255,255))
+    crown = pe.sprite.make('example.jpeg',(100,100),(250,250), 70)
     crown.init(crown)
     while not pe.event.quitcheck():
       pe.sprite.display(crown)
+      pe.display.update()
     pe.quit()
     quit()
