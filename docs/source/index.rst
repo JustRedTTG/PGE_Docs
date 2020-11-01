@@ -3,6 +3,9 @@ Introduction
 
 Welcome to the Pygame Extra docs!
 
+.. image:: _static/logo.png
+    :align: center
+
 Usage
 -----
 
