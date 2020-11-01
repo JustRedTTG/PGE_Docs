@@ -9,6 +9,8 @@ Table of Contents
     getting-started
     
     drawing
+    
+    sprites
 
     general-gui
     
