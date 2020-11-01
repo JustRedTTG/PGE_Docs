@@ -21,7 +21,7 @@ To install simply type this into your shell / terminal:
     
     pip3 install pygameextra
 
-after the installation you can do the following to test if Pygame Extra is installed correctly:
+After the installation you can do the following to test if Pygame Extra is installed correctly:
 
 .. code-block:: python
 
