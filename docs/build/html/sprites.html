@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprites &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="General GUI" href="general-gui.html" />
+    <link rel="prev" title="Drawing" href="drawing.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="drawing.html" title="Drawing"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sprites</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sprites">
+<h1>Sprites<a class="headerlink" href="#sprites" title="Permalink to this headline">¶</a></h1>
+<p>Sprites are a great part of Pygame Extra, let’s use them!</p>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<p>Here is the syntax, running this will return the sprite object:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sprite</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="n">imagef</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">position</span><span class="p">,</span> <span class="n">rotation</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s go over everything:</p>
+<ul class="simple">
+<li><p>imagef - this is the image file, aka the sprite file</p></li>
+<li><p>size - the sprite size in pixels, aka the image size</p></li>
+<li><p>position - the center position of the sprite</p></li>
+<li><p>rotation - the rotation of the sprite, this is automatically set to 0, so you don’t have to set it, unless you want the image to start off rotated</p></li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>Great, now the variables of a sprite:</p>
+<ul class="simple">
+<li><p>image - the loaded image object</p></li>
+<li><p>rotation - the rotation value</p></li>
+<li><p>position - the center position value or (x,y)</p></li>
+<li><p>rect - aka size</p></li>
+<li><p>size - the size multiplier of the sprite, this is one by default</p></li>
+<li><p>new - the updated image aka the current sprite with all its values loaded on</p></li>
+<li><p>refresh - this is a variable for the user to use, to keep track of wheather a sprite should be updated, this variable is only in place to save time, it’s set to True by default</p></li>
+</ul>
+</div>
+<div class="section" id="init">
+<h2>Init<a class="headerlink" href="#init" title="Permalink to this headline">¶</a></h2>
+<p>There’s something very important to keep in mind, when you edit a sprite’s variable, that really all your doing, is editing variables, to make pygame use these valiables and make the new image we do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">spriteOBJ</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">spriteOBJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If you don’t want to init the entire sprite that’s fine, there’s an init for everything seperately!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">spriteOBJ</span><span class="o">.</span><span class="n">init_rotation</span><span class="p">(</span><span class="n">spriteOBJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">spriteOBJ</span><span class="o">.</span><span class="n">init_position</span><span class="p">(</span><span class="n">spriteOBJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>All sprite inits return the “new” aka “spriteOBJ.new” variable, witch has been updated, from there you can display it with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sprite</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">spriteOBJ</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="making-and-displaying">
+<h2>Making and Displaying<a class="headerlink" href="#making-and-displaying" title="Permalink to this headline">¶</a></h2>
+<p>Let’s put all that knowledge into making a sprite!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygameextra</span> <span class="kn">as</span> <span class="nn">pe</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">make</span><span class="p">((</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="s1">&#39;My Game&#39;</span><span class="p">)</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">fill</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">))</span>
+<span class="n">crown</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">make</span><span class="p">(</span><span class="s1">&#39;example.jpeg&#39;</span><span class="p">,(</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="mi">250</span><span class="p">,</span><span class="mi">250</span><span class="p">),</span> <span class="mi">70</span><span class="p">)</span>
+<span class="n">crown</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">crown</span><span class="p">)</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">c</span> <span class="ow">in</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">quitcheckauto</span><span class="p">()</span>
+  <span class="n">pe</span><span class="o">.</span><span class="n">sprite</span><span class="o">.</span><span class="n">display</span><span class="p">(</span><span class="n">crown</span><span class="p">)</span>
+  <span class="n">pe</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+<span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/docs16.png" class="align-center" src="_images/docs16.png" />
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sprites</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syntax">Syntax</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#variables">Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#init">Init</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-and-displaying">Making and Displaying</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound-and-music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound-and-music.html#music">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="drawing.html" title="Drawing"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sprites</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

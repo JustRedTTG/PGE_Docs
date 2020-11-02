@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sound &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Settings" href="settings.html" />
+    <link rel="prev" title="General GUI" href="general-gui.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="settings.html" title="Settings"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sound</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="sound">
+<h1>Sound<a class="headerlink" href="#sound" title="Permalink to this headline">¶</a></h1>
+<p>Let’s get started with Pygame Extra’s sound class.</p>
+<div class="section" id="loading">
+<h2>Loading<a class="headerlink" href="#loading" title="Permalink to this headline">¶</a></h2>
+<p>To load a sound from file we simple use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">sound</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s say we have a “boom.mp3” file in our script folder, to load it we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">boom</span> <span class="o">=</span> <span class="n">pe</span><span class="o">.</span><span class="n">sound</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;boom.mp3&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now when we need to play the sound we just provide the “boom” variable</p>
+</div>
+<div class="section" id="playing">
+<h2>Playing<a class="headerlink" href="#playing" title="Permalink to this headline">¶</a></h2>
+<p>To play a sound we simply use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">sound</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">soundOBJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s play our “boom” sound:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">sound</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">boom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There we go!</p>
+</div>
+</div>
+<div class="section" id="music">
+<h1>Music<a class="headerlink" href="#music" title="Permalink to this headline">¶</a></h1>
+<p>Let’s get started with Pygame Extra’s music class.</p>
+<div class="section" id="id1">
+<h2>Loading<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>To load a music file we simple use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">file</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s say we have a “boss.mp3” file in our script folder, to load it we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;boss.mp3&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s play the music!</p>
+</div>
+<div class="section" id="id2">
+<h2>Playing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>To play the music we simply use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">amount</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Say we want to play it once:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>How about if we want to play it infinitly?</p>
+<p>No problem!</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If we do this, we’ll have to pause or stop it!</p>
+</div>
+<div class="section" id="pause-unpause">
+<h2>Pause / Unpause<a class="headerlink" href="#pause-unpause" title="Permalink to this headline">¶</a></h2>
+<p>To pause the currently playing music we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">pause</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To unpause the currently playing music we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">unpause</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>How about if we want to stop the music?</p>
+</div>
+<div class="section" id="stopping-and-fadeing">
+<h2>Stopping and Fadeing<a class="headerlink" href="#stopping-and-fadeing" title="Permalink to this headline">¶</a></h2>
+<p>To stop the music we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If we want the music to stop with a added fade we use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Say we want to fade and stop the music after 3 seconds, we do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">fade</span><span class="p">(</span><span class="mi">3000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The fade function is in milliseconds, so for 3 seconds we use “3000”.</p>
+</div>
+<div class="section" id="volume">
+<h2>Volume<a class="headerlink" href="#volume" title="Permalink to this headline">¶</a></h2>
+<p>It’s important to control the volume of the music, let’s see how.</p>
+<div class="section" id="getting">
+<h3>Getting<a class="headerlink" href="#getting" title="Permalink to this headline">¶</a></h3>
+<p>There are 2 ways to get the volume</p>
+<p>The more accurate way is by using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">get_v</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will return the volume of the mixer.</p>
+<p>The more unaccurate way is to directly use the valume variable:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">volume</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting">
+<h3>Setting<a class="headerlink" href="#setting" title="Permalink to this headline">¶</a></h3>
+<p>Now to set the volume:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">set_v</span><span class="p">(</span><span class="n">new_volume</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is basically it!</p>
+</div>
+</div>
+<div class="section" id="position">
+<h2>Position<a class="headerlink" href="#position" title="Permalink to this headline">¶</a></h2>
+<p>The position of the music track might be neccessary in some cases, for example in music players</p>
+<div class="section" id="id3">
+<h3>Getting<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>To get the position of the music is at we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">get_t</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This will get the current position of the music track.</p>
+</div>
+<div class="section" id="id4">
+<h3>Setting<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>To set the position of the music track we simply do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">music</span><span class="o">.</span><span class="n">set_t</span><span class="p">(</span><span class="n">new_time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is basically it!</p>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprites.html">Sprites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sound</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#loading">Loading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#playing">Playing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#music">Music</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Loading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Playing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pause-unpause">Pause / Unpause</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stopping-and-fadeing">Stopping and Fadeing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#volume">Volume</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#getting">Getting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting">Setting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#position">Position</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Getting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Setting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="settings.html" title="Settings"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Sound</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

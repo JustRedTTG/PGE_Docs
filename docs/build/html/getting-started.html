@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting Started &#8212; Pygame Extra 1 documentation</title>
+    <title>Getting Started &#8212; Pygame Extra 1.6 documentation</title>
     <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -15,7 +15,8 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Pygame Extra 1.6 BETA" href="index.html" /> 
+    <link rel="next" title="Events" href="events.html" />
+    <link rel="prev" title="Introduction" href="index.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -24,9 +25,12 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="index.html" title="Pygame Extra 1.6 BETA"
+          <a href="events.html" title="Events"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Getting Started</a></li> 
       </ul>
     </div>  
@@ -38,6 +42,53 @@
             
   <div class="section" id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Let’s get started and learn how to use the tools of simplicity and make quick and cool games / applications.</p>
+<div class="section" id="simple-loop">
+<h2>Simple Loop<a class="headerlink" href="#simple-loop" title="Permalink to this headline">¶</a></h2>
+<p>Let’s get started by making a simple game loop, this loop will run our game code, on every frame, let’s see how you’d make that in Pygame Extra.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygameextra</span> <span class="kn">as</span> <span class="nn">pe</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">make</span><span class="p">((</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="s1">&#39;My Game&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">c</span> <span class="ow">in</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">quitcheckauto</span><span class="p">()</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Game Code&quot;</span><span class="p">)</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+<span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Running this will make a 500 x 500 display called “My Game” and close once the “X”(close) is clicked.</p>
+<img alt="_images/docs01.png" class="align-center" src="_images/docs01.png" />
+<p>As you can see we still have nothing on screen, but we can see the message “Game Code” shows up every frame!</p>
+</div>
+<div class="section" id="filling-the-background">
+<h2>Filling the background<a class="headerlink" href="#filling-the-background" title="Permalink to this headline">¶</a></h2>
+<p>After making our basic game loop, let’s fill the background with white on every frame!
+For that we simply use the method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fill</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here we have two options we can either manually set the color or use “<code class="docutils literal notranslate"><span class="pre">pe.color</span></code>”.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pygameextra</span> <span class="kn">as</span> <span class="nn">pe</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">make</span><span class="p">((</span><span class="mi">500</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <span class="s1">&#39;My Game&#39;</span><span class="p">)</span>
+<span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">c</span> <span class="ow">in</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">quitcheckauto</span><span class="p">()</span>
+  <span class="n">pe</span><span class="o">.</span><span class="n">fill</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="n">pe</span><span class="o">.</span><span class="n">color</span><span class="o">.</span><span class="n">white</span><span class="p">)</span>
+<span class="n">pe</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+<span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="_images/docs02.png" class="align-left" src="_images/docs02.png" />
+<p>As you can see white is filling the entire screen. This is the basic things you need to know when starting to use Pygame Extra.</p>
+</div>
+<div class="section" id="maximum-frames-per-second">
+<h2>Maximum Frames Per Second<a class="headerlink" href="#maximum-frames-per-second" title="Permalink to this headline">¶</a></h2>
+<p>When making a game / program it’s important to have a stable Framerate, we can set the max frames per second by using the following command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">MaxFPS</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will limit the game / program to a maximum framerate, we can’t tell the game what the minimum framerate has to be, that depends on the user’s machine.</p>
+</div>
 </div>
 
 
@@ -47,16 +98,6 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Pygame Extra 1.6 BETA</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/getting-started.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
@@ -67,6 +108,24 @@
     </div>
 </div>
 <script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#simple-loop">Simple Loop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filling-the-background">Filling the background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#maximum-frames-per-second">Maximum Frames Per Second</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="events.html">Events</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprites.html">Sprites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound-and-music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sound-and-music.html#music">Music</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+</ul>
+
         </div>
       </div>
       <div class="clearer"></div>
@@ -78,14 +137,17 @@
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="index.html" title="Pygame Extra 1.6 BETA"
+          <a href="events.html" title="Events"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Introduction"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Getting Started</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright .
+        &#169; Copyright 2020, RedstoneHair.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
     </div>
   </body>

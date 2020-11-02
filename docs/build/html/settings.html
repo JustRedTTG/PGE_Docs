@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="General GUI" href="general-gui.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Settings</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="settings">
+<h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p>Pygame Extra has some settings up it’s sleeve, let’s take a closer look at all the diffrent settings and what they affect.</p>
+<div class="section" id="changing-settings">
+<h2>Changing Settings<a class="headerlink" href="#changing-settings" title="Permalink to this headline">¶</a></h2>
+<p>It’s very easy to change settings, you simply use the following:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">Settings</span><span class="o">.</span><span class="n">setting</span> <span class="o">=</span> <span class="n">newValue</span>
+</pre></div>
+</div>
+<p>That is pretty much it!</p>
+</div>
+<div class="section" id="update-auto">
+<h2>update_auto<a class="headerlink" href="#update-auto" title="Permalink to this headline">¶</a></h2>
+<p>Default value: True</p>
+<p>This settings controls wheather things like buttons and sliders, even text, automatically update the screen when they are done drawing</p>
+</div>
+<div class="section" id="update-onbutton">
+<h2>update_onButton<a class="headerlink" href="#update-onbutton" title="Permalink to this headline">¶</a></h2>
+<p>Default value: False</p>
+<p>This setting is pretty understandable, if True it updates the screen on button press</p>
+</div>
+<div class="section" id="button-delay">
+<h2>button_delay<a class="headerlink" href="#button-delay" title="Permalink to this headline">¶</a></h2>
+<p>Default value: 100 (ms)</p>
+<p>This setting is a variable buttons use to delay some time after a click, this prevents one click beign register like more than one, this setting does not matter if the button_lock settings are set to True</p>
+</div>
+<div class="section" id="button-lock">
+<h2>button_lock<a class="headerlink" href="#button-lock" title="Permalink to this headline">¶</a></h2>
+<p>This setting class has two seperate settings</p>
+<ul class="simple">
+<li><p>rect</p></li>
+<li><p>image</p></li>
+</ul>
+<p>Both default at value: True</p>
+<p>These settings are used by buttons to know if the button should lock up after a click aka wait for release</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprites.html">Sprites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#changing-settings">Changing Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-auto">update_auto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#update-onbutton">update_onButton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#button-delay">button_delay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#button-lock">button_lock</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="general-gui.html" title="General GUI"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Settings</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

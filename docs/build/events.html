@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Drawing" href="drawing.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="drawing.html" title="Drawing"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Events</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="events">
+<h1>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h1>
+<p>While simple you might get lost in how to use events, but it’s really simple, let’s take a look at all the events!</p>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>Events are setup in your game loop, and run every frame.</p>
+<p>Here is how to setup the events:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">c</span> <span class="ow">in</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+  <span class="c1">#PUT EVENTS HERE</span>
+</pre></div>
+</div>
+<p>Now we just replace <code class="docutils literal notranslate"><span class="pre">#PUT</span> <span class="pre">EVENTS</span> <span class="pre">HERE</span></code> with the included events.</p>
+<p>One of the events you’ll use in probably every game / application is the quitcheckauto.</p>
+<div class="section" id="event-quitcheckauto">
+<h3>event.quitcheckauto()<a class="headerlink" href="#event-quitcheckauto" title="Permalink to this headline">¶</a></h3>
+<p>Like the name stands Quit Check Auto, automatically closes the game / application if the “X”  button is pressed.</p>
+<p>If you want another action when “X” is pressed like a save action, then you can use quitcheck.</p>
+</div>
+<div class="section" id="event-quitcheck">
+<h3>event.quitcheck()<a class="headerlink" href="#event-quitcheck" title="Permalink to this headline">¶</a></h3>
+<p>Like the name stands Quit Check will check if the “X” button is pressed and return a bool.</p>
+<p>Here is an example of it’s use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">quitcheck</span><span class="p">():</span>
+  <span class="n">save</span><span class="p">()</span>
+  <span class="n">pe</span><span class="o">.</span><span class="n">Pquit</span><span class="p">()</span>
+  <span class="n">quit</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="event-keylog">
+<h3>event.keylog()<a class="headerlink" href="#event-keylog" title="Permalink to this headline">¶</a></h3>
+<p>This is a testing function, it logs the key number of any key that get’s pressed or released and returns it.</p>
+</div>
+<div class="section" id="event-keyup-var">
+<h3>event.keyUP(var)<a class="headerlink" href="#event-keyup-var" title="Permalink to this headline">¶</a></h3>
+<p>This is the key up event, using keylog we can see what value to feed this function, after that we get a bool</p>
+<p>Here is an example of it’s use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">keyUP</span><span class="p">(</span><span class="mi">119</span><span class="p">):</span>
+  <span class="n">jump</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="event-keydown-var">
+<h3>event.keyDOWN(var)<a class="headerlink" href="#event-keydown-var" title="Permalink to this headline">¶</a></h3>
+<p>This is the key down event, using keylog we can see what value to feed this function, after that we get a bool</p>
+<p>Here is an example of it’s use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">pe</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">keyDOWN</span><span class="p">(</span><span class="mi">115</span><span class="p">):</span>
+  <span class="n">sneak</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Events</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setup">Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#event-quitcheckauto">event.quitcheckauto()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#event-quitcheck">event.quitcheck()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#event-keylog">event.keylog()</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#event-keyup-var">event.keyUP(var)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#event-keydown-var">event.keyDOWN(var)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="drawing.html">Drawing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sprites.html">Sprites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="drawing.html" title="Drawing"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Events</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing &#8212; Pygame Extra 1.6 documentation</title>
+    <link rel="stylesheet" href="_static/groundwork.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sprites" href="sprites.html" />
+    <link rel="prev" title="Getting Started" href="getting-started.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sprites.html" title="Sprites"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Drawing</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="drawing">
+<h1>Drawing<a class="headerlink" href="#drawing" title="Permalink to this headline">¶</a></h1>
+<p>Pygame Extra has simple drawing functions, most are simply redirecting to pygame itself and don’t really change in complexity</p>
+<div class="section" id="line">
+<h2>Line<a class="headerlink" href="#line" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/docs13.png" class="align-right" src="_images/docs13.png" />
+<p>Let’s look at the syntax of drawing a line</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">update</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s take a closer look at the syntax</p>
+<ul class="simple">
+<li><p>color - the line color</p></li>
+<li><p>pos - the position of the line aka <code class="docutils literal notranslate"><span class="pre">(StartX,StartY,EndX,EndY)</span></code></p></li>
+<li><p>w - the line width</p></li>
+<li><p>update(optional) - setting this to false will disable the automatic screen update</p></li>
+</ul>
+</div>
+<div class="section" id="rect">
+<h2>Rect<a class="headerlink" href="#rect" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/docs14.png" class="align-right" src="_images/docs14.png" />
+<p>Let’s look at the syntax of drawing a rect aka a rectangle</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">rect</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">update</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s take a closer look at the syntax</p>
+<ul class="simple">
+<li><p>color - the rect / rect line color</p></li>
+<li><p>rect - the rect itself aka <code class="docutils literal notranslate"><span class="pre">(StartX,StartY,SizeX,SizeY)</span></code></p></li>
+<li><p>w (no fill) - setting this to be larger than 0 will make a line rect without fill</p></li>
+<li><p>w (with fill) - setting this to 0 will make the rect filled</p></li>
+<li><p>update(optional) - setting this to false will disable the automatic screen update</p></li>
+</ul>
+</div>
+<div class="section" id="circle">
+<h2>Circle<a class="headerlink" href="#circle" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/docs15.png" class="align-right" src="_images/docs15.png" />
+<p>Let’s look at the syntax of drawing a circle</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pe</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now let’s take a closer look at the syntax</p>
+<ul class="simple">
+<li><p>color - the circle color</p></li>
+<li><p>pos - the center position of the circle</p></li>
+<li><p>size - the size / radius of the circle</p></li>
+<li><p>w (no fill) - setting this to be larger than 0 will make a line circle</p></li>
+<li><p>w (with fill) - setting this to 0 will make a filled circle</p></li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="contents.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Drawing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#line">Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rect">Rect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#circle">Circle</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sprites.html">Sprites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general-gui.html">General GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sprites.html" title="Sprites"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="getting-started.html" title="Getting Started"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="contents.html">Pygame Extra 1.6 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Drawing</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, RedstoneHair.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.2.1.
+    </div>
+  </body>
+</html>
