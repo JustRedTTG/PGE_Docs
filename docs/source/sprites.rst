@@ -1,12 +1,12 @@
 Sprites
 =======
 
-Sprites are a great part of Pygame Extra!
+Sprites are a great part of Pygame Extra, let's use them!
 
 Syntax
 ------
 
-Let's make a sprite, here is the syntax, running this will return the sprite object:
+Here is the syntax, running this will return the sprite object:
 
 .. code-block:: python
 
@@ -22,7 +22,7 @@ Now let's go over everything:
 Variables
 ---------
 
-Great, now a the variables of a sprite:
+Great, now the variables of a sprite:
 
 * image - the loaded image object
 * rotation - the rotation value
@@ -35,7 +35,7 @@ Great, now a the variables of a sprite:
 Init
 ----
 
-There's something very important to keep in mind, when you edit a sprite's variables, that really all your doing, editing variables, to make pygame use this valiables to make the new image we do:
+There's something very important to keep in mind, when you edit a sprite's variable, that really all your doing, is editing variables, to make pygame use these valiables and make the new image we do:
 
 .. code-block:: python
 
@@ -55,7 +55,9 @@ All sprite inits return the "new" aka "spriteOBJ.new" variable, witch has been u
 
 .. code-block:: python
 
-    sprite.display(spriteOBJ)
+    image.display(spriteOBJ.new)
+
+You'll notice we just use the image class since in this version of PGE there still isn't sprite.display
 
 Making and Displaying
 ---------------------
@@ -70,7 +72,7 @@ Let's put all that knowledge into making a sprite!
     crown = pe.sprite.make('example.jpeg',(100,100),(250,250), 70)
     crown.init(crown)
     while not pe.event.quitcheck():
-      pe.sprite.display(crown)
+      pe.image.display(crown.new)
       pe.display.update()
     pe.quit()
     quit()
