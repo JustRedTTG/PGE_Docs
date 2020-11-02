@@ -2,7 +2,7 @@ Table of Contents
 =================
 
 .. toctree::
-    :maxdepth: 10
+    :maxdepth: 100000
 
     index
     
