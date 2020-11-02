@@ -9,16 +9,16 @@ Welcome to the Pygame Extra docs!
 Usage
 -----
 
-Pygame Extra also known as PGE is sort of like a idle for pygame, but instead of using pygame directly, we just import PGE.
+Pygame Extra also known as PGE is sort of like a IDLE for pygame, but instead of using pygame directly, we just import PGE.
 
-From there PGE makes almost every line shorter, depending on how long your variables are, XD.
+From there PGE makes almost every line shorter.
 
-PGE can be used by even begginers, if your one, then welcome to the team, we hope PGE makes your life and learning experience easier!
+PGE can be used even by begginers, if your one, then welcome to the team, we hope PGE makes your life and learning experience easier!
 
 Installation
 ------------
 
-To install simply type this into your shell / terminal:
+To install Pygame Extra simply type this into your shell / terminal:
 
 .. code-block:: bash
     
@@ -30,4 +30,4 @@ After the installation you can do the following to test if Pygame Extra is insta
 
     import pygameextra as pe
 
-If you run this you'll see a message that will inform you if pygame extra is installed correctly!
+You should see the welcoming message.
