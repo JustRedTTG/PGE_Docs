@@ -1,12 +1,12 @@
 Getting Started
 ===============
 
-Let's get started, install Pygame Extra, if you haven't already and follow the docs to learn how to use the tools of simplisity and make quick and cool games / applications.
+Let's get started and learn how to use the tools of simplicity and make quick and cool games / applications.
 
 Simple Loop
 -----------
 
-Let's get started by making a simple game loop, this loop will run sertain code, on every frame, let's see how you'd make that in Pygame Extra
+Let's get started by making a simple game loop, this loop will run our game code, on every frame, let's see how you'd make that in Pygame Extra.
 
 .. code-block:: python
 
@@ -17,7 +17,7 @@ Let's get started by making a simple game loop, this loop will run sertain code,
     pe.quit()
     quit()
 
-Running this will make a 500 x 500 display called "My Game" and close once the "X"(close) is clicked
+Running this will make a 500 x 500 display called "My Game" and close once the "X"(close) is clicked.
 
 .. image:: _static/docs01.png
     :align: center
@@ -27,14 +27,14 @@ As you can see we still have nothing on screen, but we can see the message "Game
 Filling the background
 ----------------------
 
-After making our basic game loop, let's fill the background with white onevery frame!
+After making our basic game loop, let's fill the background with white on every frame!
 For that we simply use the method: 
 
 .. code-block:: python
 
   fill.full(color)
 
-Here we have two options we can either manually set the color or use "``pe.color``"
+Here we have two options we can either manually set the color or use "``pe.color``".
 
 .. code-block:: python
 
@@ -48,7 +48,7 @@ Here we have two options we can either manually set the color or use "``pe.color
 .. image:: _static/docs02.png
     :align: left
     
-As you can see the white color is filling the entire screen. this is the basic things you need to know when starting to use Pygame Extra.
+As you can see white is filling the entire screen. This is the basic things you need to know when starting to use Pygame Extra.
 
 Maximum Frames Per Second
 -------------------------
