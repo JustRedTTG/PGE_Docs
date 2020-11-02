@@ -17,7 +17,7 @@ Now let's go over everything:
 * imagef - this is the image file, aka the sprite file
 * size - the sprite size in pixels, aka the image size
 * position - the center position of the sprite
-* rotation - the rotation of the sprite, this is automatically set to 90, so you don't have to set it, unless you want the image to start off rotated
+* rotation - the rotation of the sprite, this is automatically set to 0, so you don't have to set it, unless you want the image to start off rotated
 
 Variables
 ---------
@@ -55,9 +55,7 @@ All sprite inits return the "new" aka "spriteOBJ.new" variable, witch has been u
 
 .. code-block:: python
 
-    image.display(spriteOBJ.new)
-
-You'll notice we just use the image class since in this version of PGE there still isn't sprite.display
+    sprite.display(spriteOBJ)
 
 Making and Displaying
 ---------------------
@@ -71,8 +69,10 @@ Let's put all that knowledge into making a sprite!
     pe.fill.full((255,255,255))
     crown = pe.sprite.make('example.jpeg',(100,100),(250,250), 70)
     crown.init(crown)
-    while not pe.event.quitcheck():
-      pe.image.display(crown.new)
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
+      pe.sprite.display(crown)
       pe.display.update()
     pe.quit()
     quit()

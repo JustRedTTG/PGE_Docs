@@ -22,7 +22,9 @@ To avoid the text from going off screen or such we can use ``pe.math.center``, l
     pe.display.make((500, 500), 'My Game')
     text = pe.text.quick.small('TEXT', pe.math.center((0, 0, 500, 500)))
     pe.fill.full(pe.color.white)
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.text.display(text)
     pe.quit()
     quit()
@@ -110,7 +112,9 @@ Let's display the image on the entire screen!
     pe.display.make((500, 500), 'My Game')
     image = pe.image.load('example.jpeg',(500,500),(0,0))
     pe.fill.full(pe.color.white)
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.image.display(image)
       pe.display.update()
     pe.quit()
@@ -164,7 +168,9 @@ Now let's look at some examples:
     pe.fill.full(pe.color.white)
     def action(data):
       print(data)
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.button.rect((0,0,50,50),pe.color.red,pe.color.green,text,action,'DATA',True)
     pe.quit()
     quit()
@@ -202,7 +208,9 @@ Now let's make a image button, first we need to load both images, then we simply
     pe.fill.full(pe.color.white)
     def action(data):
       print(data)
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.button.image((0,0,50,50),idle,hover,action,'DATA',True)
     pe.quit()
     quit()
@@ -236,7 +244,9 @@ Bellow you'll find an example featuring both button types
     pe.fill.full(pe.color.white)
     def action(data):
       print(data)
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.button.rect((0,0,50,50),pe.color.red,pe.color.green,text,action,'Rect',True)
       pe.button.image((55,0,50,50),idle,hover,action,'Image',True)
     pe.quit()
@@ -284,7 +294,9 @@ Let's look at some examples already!
     pe.fill.full(pe.color.white)
     sO = 50
     sT = 50
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       sO = pe.slider.boxed((30, 100, 250, 15, 20), (255,0,0), 0, 100, sO, (255, 255, 0), (0, 0, 0), (0,255,0), True, (0,0,255))
       sT = pe.slider.normal((350, 100, 250, 15, 20), (255,0,0), 0, 100, sT, (255, 255, 0), (0,255,0), 5 ,True, (0,0,255), 3)
     pe.quit()

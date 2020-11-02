@@ -8,10 +8,14 @@ Table of Contents
     
     getting-started
     
+    events
+    
     drawing
     
     sprites
 
     general-gui
+    
+    sound-and-music
     
     settings

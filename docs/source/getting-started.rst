@@ -12,7 +12,9 @@ Let's get started by making a simple game loop, this loop will run our game code
 
     import pygameextra as pe
     pe.display.make((500, 500), 'My Game')
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       print("Game Code")
     pe.quit()
     quit()
@@ -40,7 +42,9 @@ Here we have two options we can either manually set the color or use "``pe.color
 
     import pygameextra as pe
     pe.display.make((500, 500), 'My Game')
-    while not pe.event.quitcheck():
+    while True:
+      for pe.event.c in pe.event.get():
+        pe.event.quitcheckauto()
       pe.fill.full(pe.color.white)
     pe.quit()
     quit()
