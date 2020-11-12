@@ -17,13 +17,17 @@ Using mouse.clicked() we can check if the mouse is clicked, now since there's 3 
 
 Say we have our left mouse button pressed
 
-[True, False, False]
+.. code-block:: python
+  [True, False, False]
 
 Now, say we have our right mouse button pressed
 
-[False, False, True]
+.. code-block:: python
+  [False, False, True]
 
 Basically the syntax here is:
 
-pe.mouse.clicked()
-[Left, Middle, Right]
+.. code-block:: python
+  pe.mouse.clicked()
+.. code-block:: python
+  [Left, Middle, Right]
