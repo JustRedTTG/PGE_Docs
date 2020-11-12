@@ -42,5 +42,5 @@ Imagine this as the walk function in scrath, the function places itself on point
 
 I hope you understand what i mean, but here is an image to help with what i just explained 
 
-.. image:: _static/logo.png
+.. image:: _static/docs17.png
     :align: center
