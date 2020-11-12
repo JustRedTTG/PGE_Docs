@@ -10,6 +10,12 @@ Position
 
 Using mouse.pos() we can get the position of the mouse, in tuple!
 
+Syntax:
+
+.. code-block:: python
+
+    (mouseX,mouseY)
+
 Clicked?
 --------
 
