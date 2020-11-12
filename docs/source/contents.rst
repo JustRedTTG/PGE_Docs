@@ -12,6 +12,8 @@ Table of Contents
     
     drawing
     
+    mouse
+    
     math
     
     sprites
