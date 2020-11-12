@@ -12,6 +12,8 @@ Table of Contents
     
     drawing
     
+    math
+    
     sprites
 
     general-gui
