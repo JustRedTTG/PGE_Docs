@@ -45,7 +45,7 @@ event.keylog()
 
 This is a testing function, it logs the key number of any key that get's pressed or released and returns it.
 
-event.keyUP(var)
+event.key_UP(var)
 ----------------
 
 This is the key up event, using keylog we can see what value to feed this function, after that we get a bool
@@ -54,10 +54,10 @@ Here is an example of it's use:
 
 .. code-block:: python
 
-    if pe.event.keyUP(119):
+    if pe.event.key_UP(119):
       jump()
 
-event.keyDOWN(var)
+event.key_DOWN(var)
 ------------------
 
 This is the key down event, using keylog we can see what value to feed this function, after that we get a bool
@@ -66,5 +66,5 @@ Here is an example of it's use:
 
 .. code-block:: python
 
-    if pe.event.keyDOWN(115):
+    if pe.event.key_DOWN(115):
       sneak()
