@@ -34,7 +34,7 @@ For that we simply use the method:
 
 .. code-block:: python
 
-  fill.full(color)
+  fill.full(color, update=True, layer=0)
 
 Here we have two options we can either manually set the color or use "``pe.color``".
 
