@@ -15,9 +15,10 @@ That is pretty much it!
 
 update_auto
 -----------
-Default value: True
+Default value: False
 
-This settings controls whether things like buttons and sliders, even text, automatically update the screen when they are done drawing
+This settings controls whether things like buttons and sliders, even text, automatically update the screen when they are done drawing.
+It is not Recommended
 
 update_onButton
 ---------------
