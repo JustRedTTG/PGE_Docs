@@ -26,10 +26,12 @@ The rect starts at 0,0 and expands 100 x 100 this means the middle of this rect 
 
     (50,50)
 
+If your using pe.rect() then simply use the embedded function of rect.center
+
 Perspective
 -----------
 
-I myself forgot what this did, witch is funny, but i'll try to tell you what it does.
+This is a powerful math function for measuring a point between 2 points
 
 Syntax:
 
@@ -37,8 +39,8 @@ Syntax:
 
     math.perspective(point_a, point_b, length)
 
-Now as far as i remmember, this starts at point_a and goes length distance to point_b.
-Imagine this as the walk function in scrath, the function places itself on point_a and looks toward point_b, it then walks toward point_b for the length of distance given.
+This function starts at point_a and goes length distance to point_b.
+Imagine this as the walk function in scratch, the function places itself on point_a and looks toward point_b, it then walks toward point_b for the length of distance given.
 
 I hope you understand what i mean, but here is an image to help with what i just explained 
 

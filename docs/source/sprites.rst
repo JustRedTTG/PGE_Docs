@@ -10,38 +10,39 @@ Here is the syntax, running this will return the sprite object:
 
 .. code-block:: python
 
-    sprite.make(imagef, size, position, rotation)
+    sprite.make(imagef, size, position, rotation=0, layer=0)
 
 Now let's go over everything:
 
-* imagef - this is the image file, aka the sprite file
+* imagef - this is the image file(s), aka the sprite file
 * size - the sprite size in pixels, aka the image size
 * position - the center position of the sprite
 * rotation - the rotation of the sprite, this is automatically set to 0, so you don't have to set it, unless you want the image to start off rotated
+* layer - the layer the sprite is rendered on
 
 Variables
 ---------
 
 Great, now the variables of a sprite:
 
-* image - the loaded image object
+* image - the loaded image(s) object
 * rotation - the rotation value
 * position - the center position value or (x,y)
 * rect - aka size
 * size - the size multiplier of the sprite, this is one by default
 * new - the updated image aka the current sprite with all its values loaded on
-* refresh - this is a variable for the user to use, to keep track of wheather a sprite should be updated, this variable is only in place to save time, it's set to True by default
+* refresh - this is a variable for the user to use, to keep track of whether a sprite should be updated, this variable is only in place to save time, it's set to True by default
 
 Init
 ----
 
-There's something very important to keep in mind, when you edit a sprite's variable, that really all your doing, is editing variables, to make pygame use these valiables and make the new image we do:
+There's something very important to keep in mind, when you edit a sprite's variable, that really all your doing, is editing variables, to make pygame use these variables and make the new image we do:
 
 .. code-block:: python
 
     spriteOBJ.init(spriteOBJ)
     
-If you don't want to init the entire sprite that's fine, there's an init for everything seperately!
+If you don't want to init the entire sprite that's fine, there's an init for everything separately!
 
 .. code-block:: python
 
@@ -79,3 +80,8 @@ Let's put all that knowledge into making a sprite!
 
 .. image:: _static/docs16.png
     :align: center
+
+Animation
+---------
+
+Further we can add animation for this we need to specify 2 or more images.

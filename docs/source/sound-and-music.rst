@@ -74,7 +74,7 @@ Say we want to play it once:
 
     pe.music.play(1)
     
-How about if we want to play it infinitly?
+How about if we want to play it infinitely?
 
 No problem!
 
@@ -101,7 +101,7 @@ To unpause the currently playing music we simply do:
 
 How about if we want to stop the music?
 
-Stopping and Fadeing
+Stopping and Fading
 --------------------
 
 To stop the music we simply do:
@@ -142,7 +142,7 @@ The more accurate way is by using:
     
 This will return the volume of the mixer.
 
-The more unaccurate way is to directly use the valume variable:
+The more inaccurate way is to directly use the volume variable:
 
 .. code-block:: python
 
@@ -162,7 +162,7 @@ This is basically it!
 Position
 --------
 
-The position of the music track might be neccessary in some cases, for example in music players
+The position of the music track might be necessary in some cases, for example in music players
 
 Getting
 +++++++

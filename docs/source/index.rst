@@ -13,7 +13,7 @@ Pygame Extra also known as PGE is sort of like a IDLE for pygame, but instead of
 
 From there PGE makes almost every line shorter.
 
-PGE can be used even by begginers, if your one, then welcome to the team, we hope PGE makes your life and learning experience easier!
+PGE can be used even by beginners, if your one, then welcome to the team, we hope PGE makes your life and learning experience easier!
 
 Installation
 ------------

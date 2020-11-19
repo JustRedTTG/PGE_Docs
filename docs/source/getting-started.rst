@@ -57,10 +57,10 @@ As you can see white is filling the entire screen. This is the basic things you 
 Maximum Frames Per Second
 -------------------------
 
-When making a game / program it's important to have a stable Framerate, we can set the max frames per second by using the following command:
+When making a game / program it's important to have a stable frame-rate, we can set the max frames per second by using the following command:
 
 .. code-block:: python
     
     pe.time.tick(MaxFPS)
     
-This will limit the game / program to a maximum framerate, we can't tell the game what the minimum framerate has to be, that depends on the user's machine.
+This will limit the game / program to a maximum frame-rate, we can't tell the game what the minimum frame-rate has to be, that depends on the user's machine.
