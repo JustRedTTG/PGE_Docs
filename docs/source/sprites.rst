@@ -85,3 +85,4 @@ Animation
 ---------
 
 Further we can add animation for this we need to specify 2 or more images.
+To do that we simply supply a "list" of image files

@@ -41,7 +41,7 @@ As you can see the text is now centered in the middle of our screen, if you wish
 
 Also do note that you can make much more detailed texts by either editing the quick texts or simply making a normal text!
 
-It's also important to note that when making buttons you'll need to make texts seperately for the buttons.   
+It's also important to note that when making buttons you'll need to make texts separately for the buttons.
 
 Ok so let's look at how to edit a text's properties.
 
@@ -148,11 +148,11 @@ Ok let's go over everything one by one, starting with the rect button.
 * rect - this is the rect of the button, say we wanna make a button from (0, 0) and make it a size of 50 x 50, we would simply use: ``(0,0,50,50)``
 * ic,ac - these are the 2 colors of the button, one for button idle, and one for hover.
 * Text - the text that is placed on top of the button.
-* action - this is the function that get's called when the button is clicked.
+* action - this is the function that gets called when the button is clicked.
 * data - if this is not None, then the action will be called with this data.
 * tmp - this is True by default, setting it to False will disable the automatic screen update
 
-Now the image button spesific syntax.
+Now the image button specific syntax.
 
 * ic,ac - these are the 2 images of the button, one for button idle, and one for hover.
 
@@ -264,7 +264,7 @@ There's actually two types of sliders, the normal slider and the boxed slider, l
     pe.slider.normal(rect, imageS, minS, maxS, current, back, color, w, enableT, colorT, wT)
     pe.slider.boxed(rect, imageS, minS, maxS, current, back, lineout, color, enableT, colorT)
     
-Phew! alot to take in huh, let's go over everything one by one:
+Phew! a lot to take in huh, let's go over everything one by one:
 
 * rect - the rect here is the same as the button rect ``(startX,startY,sizeX,sizeY)``
 * imageS (image mode) - if you want a custom image for the slider itself you'd supply it here

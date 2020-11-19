@@ -1,7 +1,7 @@
 Settings
 ========
 
-Pygame Extra has some settings up it's sleeve, let's take a closer look at all the diffrent settings and what they affect.
+Pygame Extra has some settings up it's sleeve, let's take a closer look at all the different settings and what they affect.
 
 Changing Settings
 -----------------
@@ -17,7 +17,7 @@ update_auto
 -----------
 Default value: True
 
-This settings controls wheather things like buttons and sliders, even text, automatically update the screen when they are done drawing
+This settings controls whether things like buttons and sliders, even text, automatically update the screen when they are done drawing
 
 update_onButton
 ---------------
@@ -29,11 +29,11 @@ button_delay
 ------------
 Default value: 100 (ms)
 
-This setting is a variable buttons use to delay some time after a click, this prevents one click beign register like more than one, this setting does not matter if the button_lock settings are set to True
+This setting is a variable buttons use to delay some time after a click, this prevents one click being register like more than one, this setting does not matter if the button_lock settings are set to True
 
 button_lock
 -----------
-This setting class has two seperate settings
+This setting class has two separate settings
 
 * rect
 * image
