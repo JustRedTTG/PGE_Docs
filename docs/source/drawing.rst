@@ -73,5 +73,6 @@ Let's look at the syntax of drawing a ellipse
 Now let's take a closer look at the syntax
 
 * color - the ellipse color
+* rect - the rect of the ellipse
 * update(optional) - setting this to false will disable the automatic screen update
-* layer - the layer on witch to put the circle
+* layer - the layer on witch to put the ellipse
