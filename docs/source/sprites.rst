@@ -194,6 +194,9 @@ Here's a ball example:
 
 .. image:: _static/ball/ball_11.png
 
+.. only:: builder_html
+   See :download:`this example script <_static/example/pe.sprite ball example.zip>`.
+
 .. code-block:: python
 
     import pygameextra as pe
