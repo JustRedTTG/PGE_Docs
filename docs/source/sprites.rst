@@ -198,8 +198,9 @@ Here's a ball example:
 
     import pygameextra as pe
     pe.display.make((500,500), "Ball")
-    ball = pe.Sprite(["ball_01.png", "ball_02.png", "ball_03.png", "ball_04.png", "ball_05.png", "ball_06.png", "ball_07.png", "ball_08.png", "ball_09.png", "ball_10.png", "ball_11.png"],(500,500),(0,0), 0)
+    ball = pe.Sprite(["ball_12.png", "ball_13.png", "ball_01.png", "ball_02.png", "ball_03.png", "ball_04.png", "ball_05.png", "ball_06.png", "ball_07.png", "ball_08.png", "ball_09.png", "ball_10.png", "ball_11.png"],(500,500),(0,0), 0)
     ball.step = 0.1
+    ball.frame = 3
     ball.pingpong = True
     while True:
         for pe.event.c in pe.event.get():
