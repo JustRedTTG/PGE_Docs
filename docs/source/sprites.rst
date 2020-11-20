@@ -96,13 +96,13 @@ For animation we need to specify 2 or more images.
 To do that we simply supply a "list" of image files.
 Say we have 4 walking animation frames:
 
-.. code-block::
+.. code-block:: python
 
     walk = pe.sprite.make(["walk_01.png", "walk_02.png", "walk_03.png", "walk_04.png"],(100,100),(250,250), 0)
 
 By default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
 
-.. code-block::
+.. code-block:: python
 
     walk.frame = x  # replace x with the frame you wish to switch to.
 
@@ -118,7 +118,7 @@ Simply setting the step variable, every time the sprite goes to display, if will
 
 Say we have:
 
-.. code-block::
+.. code-block:: python
 
     walk.step = 0.05
 
@@ -134,7 +134,7 @@ Sadly i can't show you animation, but here is an example code and images for you
 
 .. image:: _static/mario_04.png
 
-.. code-block::
+.. code-block:: python
 
     import pygameextra as pe
     pe.display.make((500,500), "Mario")
@@ -145,5 +145,40 @@ Sadly i can't show you animation, but here is an example code and images for you
             pe.event.quitcheckauto()
         pe.fill.full(pe.color.white)
         mario.display(mario)
+        pe.display.update()
+        pe.time.tick(60)
+
+Ping-pong
++++++++++
+
+Ping pong is a function where the animation will, like the name suggests, jump back and forth between the first and last frame, instead of looping back to the first one when getting to the end
+
+Say we have:
+
+.. code-block:: python
+
+    walk.step = 0.05
+    walk.pingpong = True
+
+ Fact: for ping-pong to work the display function will allocate a variable to remember in witch way to pong, this variable is also known as the step multiplier or:
+
+.. code-block:: python
+
+    walk.step_m = 1
+
+Here's a ball example:
+
+.. code-block:: python
+
+    import pygameextra as pe
+    pe.display.make((500,500), "Ball")
+    ball = pe.sprite.make(["ball_01.png", "ball_02.png", "ball_03.png", "ball_04.png"],(500,500),(0,0), 0)
+    ball.step = 0.1
+    ball.pingpong = True
+    while True:
+        for pe.event.c in pe.event.get():
+            pe.event.quitcheckauto()
+        pe.fill.full(pe.color.white)
+        ball.display(ball)
         pe.display.update()
         pe.time.tick(60)
