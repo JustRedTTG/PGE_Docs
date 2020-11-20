@@ -93,3 +93,9 @@ To do that we simply supply a "list" of image files
 .. code-block::
 
     walk = pe.sprite.make(['walk_01.png', 'walk_02.png', 'walk_03.png', 'walk_04.png'],(100,100),(250,250), 0)
+
+by default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
+
+.. code-block::
+
+    walk.frame = 2 # replace 2 with the frame you wish to switch to
