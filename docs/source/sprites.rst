@@ -59,7 +59,7 @@ All sprite inits return the "new" aka "spriteOBJ.new" variable, witch has been u
 
 .. code-block:: python
 
-    sprite.display(spriteOBJ)
+    spriteOBJ.display(spriteOBJ)
 
 Making and Displaying
 ---------------------
@@ -76,7 +76,7 @@ Let's put all that knowledge into making a sprite!
     while True:
       for pe.event.c in pe.event.get():
         pe.event.quitcheckauto()
-      pe.sprite.display(crown)
+      crown.display(crown)
       pe.display.update()
     pe.quit()
     quit()
@@ -144,6 +144,6 @@ Sadly i can't show you animation, but here is an example code and images for you
         for pe.event.c in pe.event.get():
             pe.event.quitcheckauto()
         pe.fill.full(pe.color.white)
-        pe.sprite.display(mario)
+        mario.display(mario)
         pe.display.update()
         pe.time.tick(60)
