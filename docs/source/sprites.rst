@@ -126,13 +126,13 @@ Depending on the frame-rate if you we're to display the sprite every game loop, 
 
 Sadly i can't show you animation, but here is an example code and images for you to try!
 
-.. image:: _static/mario_01.png
+.. image:: _static/mario/mario_01.png
 
-.. image:: _static/mario_02.png
+.. image:: _static/mario/mario_02.png
 
-.. image:: _static/mario_03.png
+.. image:: _static/mario/mario_03.png
 
-.. image:: _static/mario_04.png
+.. image:: _static/mario/mario_04.png
 
 .. code-block:: python
 
@@ -167,6 +167,32 @@ Fact: for ping-pong to work the display function will allocate a variable to rem
     walk.step_m = 1
 
 Here's a ball example:
+
+.. image:: _static/ball/ball_01.png
+
+.. image:: _static/ball/ball_02.png
+
+.. image:: _static/ball/ball_03.png
+
+.. image:: _static/ball/ball_04.png
+
+.. image:: _static/ball/ball_05.png
+
+.. image:: _static/ball/ball_06.png
+
+.. image:: _static/ball/ball_07.png
+
+.. image:: _static/ball/ball_08.png
+
+.. image:: _static/ball/ball_09.png
+
+.. image:: _static/ball/ball_10.png
+
+.. image:: _static/ball/ball_11.png
+
+.. image:: _static/ball/ball_12.png
+
+.. image:: _static/ball/ball_13.png
 
 .. code-block:: python
 
