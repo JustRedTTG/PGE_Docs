@@ -123,7 +123,8 @@ Say we have:
     walk.step = 0.05
 
 Depending on the frame-rate if you we're to display the sprite every game loop, it should animate!
-Sadly i can't show you animation, but here is an example code for you to try and run!
+
+Sadly i can't show you animation, but here is an example code and images for you to try!
 
 .. image:: _static/mario_01.png
     :align: left
