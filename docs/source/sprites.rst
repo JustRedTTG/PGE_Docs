@@ -127,7 +127,6 @@ Depending on the frame-rate if you we're to display the sprite every game loop, 
 Sadly i can't show you animation, but here is an example code and images for you to try!
 
 .. image:: _static/mario_01.png
-    :align: left
 
 .. image:: _static/mario_02.png
 
