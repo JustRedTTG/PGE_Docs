@@ -25,7 +25,7 @@ Variables
 
 Great, now the variables of a sprite:
 
-* image - the loaded image(s) object
+* image - the loaded image object(s)
 * rotation - the rotation value
 * position - the center position value or (x,y)
 * rect - aka size
