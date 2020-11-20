@@ -194,7 +194,7 @@ Here's a ball example:
 
 .. image:: _static/ball/ball_11.png
 
-See :download:`this example script <_static/example/pe.sprite ball example.zip>`.
+See :download:`download the example here: <_static/example/pe.sprite-ball-example.zip>`.
 
 .. code-block:: python
 
