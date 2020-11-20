@@ -28,7 +28,7 @@ The rect starts at 0,0 and expands 100 x 100 this means the middle of this rect 
 
 If your using pe.rect() then simply use the embedded function of rect.center
 
-Perspective
+Lerp
 -----------
 
 This is a powerful math function for measuring a point between 2 points
@@ -37,7 +37,7 @@ Syntax:
 
 .. code-block:: python
 
-    math.perspective(point_a, point_b, length)
+    math.lerp(point_a, point_b, length)
 
 This function starts at point_a and goes length distance to point_b.
 Imagine this as the walk function in scratch, the function places itself on point_a and looks toward point_b, it then walks toward point_b for the length of distance given.
