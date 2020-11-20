@@ -168,6 +168,10 @@ Fact: for ping-pong to work the display function will allocate a variable to rem
 
 Here's a ball example:
 
+.. image:: _static/ball/ball_12.png
+
+.. image:: _static/ball/ball_13.png
+
 .. image:: _static/ball/ball_01.png
 
 .. image:: _static/ball/ball_02.png
@@ -189,10 +193,6 @@ Here's a ball example:
 .. image:: _static/ball/ball_10.png
 
 .. image:: _static/ball/ball_11.png
-
-.. image:: _static/ball/ball_12.png
-
-.. image:: _static/ball/ball_13.png
 
 .. code-block:: python
 
