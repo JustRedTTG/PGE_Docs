@@ -19,7 +19,9 @@ Table of Contents
     sprites
 
     general-gui
-    
+
+    layers
+
     sound-and-music
     
     settings
