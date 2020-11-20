@@ -126,25 +126,24 @@ Depending on the frame-rate if you we're to display the sprite every game loop, 
 Sadly i can't show you animation, but here is an example code for you to try and run!
 
 .. image:: _static/mario_01.png
-    :align: right
+    :align: left
 
 .. image:: _static/mario_02.png
-    :align: right
 
 .. image:: _static/mario_03.png
-    :align: right
 
 .. image:: _static/mario_04.png
-    :align: right
 
 .. code-block::
 
     import pygameextra as pe
-    mario = pe.sprite.make(["mario_01.png", "mario_02.png", "mario_03.png", "mario_04.png"],(100,100),(0,0), 0)
+    pe.display.make((500,500), "Mario")
+    mario = pe.sprite.make(["mario_01.png", "mario_02.png", "mario_03.png", "mario_03.png", "mario_04.png"],(500,500),(0,0), 0)
     mario.step = 0.1
     while True:
         for pe.event.c in pe.event.get():
             pe.event.quitcheckauto()
+        pe.fill.full(pe.color.white)
         pe.sprite.display(mario)
         pe.display.update()
         pe.time.tick(60)
