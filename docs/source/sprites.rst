@@ -34,7 +34,7 @@ Great, now the variables of a sprite:
 * refresh - this is a variable for the user to use, to keep track of whether a sprite should be updated, this variable is only in place to save time, it's set to True by default
 * layer - the layer the sprite is on
 * step - the amount the animation steps each game loop cycle
-* ping_pong - the way the animaiton is player, if "True" the animation will go ``1,2,3,2,1``
+* ping_pong - the way the animation is player, if "True" the animation will go ``1,2,3,2,1``
 
 Init
 ----
