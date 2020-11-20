@@ -92,12 +92,13 @@ Let's look over everything we can do to animate sprites!
 Frames
 ------
 
-Further we can add animation for this we need to specify 2 or more images.
-To do that we simply supply a "list" of image files
+For animation we need to specify 2 or more images.
+To do that we simply supply a "list" of image files.
+Say we have 4 walking animation frames:
 
 .. code-block::
 
-    walk = pe.sprite.make(['walk_01.png', 'walk_02.png', 'walk_03.png', 'walk_04.png'],(100,100),(250,250), 0)
+    walk = pe.sprite.make(["walk_01.png", "walk_02.png", "walk_03.png", "walk_04.png"],(100,100),(250,250), 0)
 
 By default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
 
