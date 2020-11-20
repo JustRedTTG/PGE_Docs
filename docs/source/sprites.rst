@@ -85,12 +85,12 @@ Let's put all that knowledge into making a sprite!
     :align: center
 
 Animation
-+++++++++
+---------
 
 Let's look over everything we can do to animate sprites!
 
 Frames
-------
+++++++
 
 For animation we need to specify 2 or more images.
 To do that we simply supply a "list" of image files.
@@ -111,7 +111,7 @@ That's great, now when you want to display it, the selected frame will be displa
 Note: even though the frames are stored in a list starting with 0, the first frame is 1, and when displayed it will be subtracted to 0!
 
 Stepping
---------
+++++++++
 
 It would be easier if the sprite could automatically step trough each frame, and that is an option.
 Simply setting the step variable, every time the sprite goes to display, if will step that amount of frames.
