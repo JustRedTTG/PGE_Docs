@@ -91,4 +91,5 @@ Further we can add animation for this we need to specify 2 or more images.
 To do that we simply supply a "list" of image files
 
 .. code-block::
+
     walk = pe.sprite.make(['walk_01.png', 'walk_02.png', 'walk_03.png', 'walk_04.png'],(100,100),(250,250), 0)
