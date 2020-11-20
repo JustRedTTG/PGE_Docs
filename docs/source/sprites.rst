@@ -85,7 +85,10 @@ Let's put all that knowledge into making a sprite!
     :align: center
 
 Animation
----------
++++++++++
+
+Frames
+------
 
 Further we can add animation for this we need to specify 2 or more images.
 To do that we simply supply a "list" of image files
@@ -94,8 +97,12 @@ To do that we simply supply a "list" of image files
 
     walk = pe.sprite.make(['walk_01.png', 'walk_02.png', 'walk_03.png', 'walk_04.png'],(100,100),(250,250), 0)
 
-by default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
+By default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
 
 .. code-block::
 
-    walk.frame = 2 # replace 2 with the frame you wish to switch to
+    walk.frame = x  # replace x with the frame you wish to switch to.
+
+That's great, now when you want to display it, the selected frame will be displayed.
+
+Note: even though the frames are stored in a list starting with 0, the first frame is 1, and when displayed it will be subtracted to 0!

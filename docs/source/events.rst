@@ -43,7 +43,7 @@ Here is an example of it's use:
 event.keylog()
 --------------
 
-This is a testing function, it logs the key number of any key that get's pressed or released and returns it.
+This is a testing function, it logs the key number of any key that gets pressed or released and returns it.
 
 event.key_UP(var)
 ----------------
