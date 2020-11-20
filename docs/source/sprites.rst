@@ -109,3 +109,30 @@ By default the image to be frame will be the first frame, in this case, "walk_01
 That's great, now when you want to display it, the selected frame will be displayed.
 
 Note: even though the frames are stored in a list starting with 0, the first frame is 1, and when displayed it will be subtracted to 0!
+
+Stepping
+--------
+
+It would be easier if the sprite could automatically step trough each frame, and that is an option.
+Simply setting the step variable, every time the sprite goes to display, if will step that amount of frames.
+
+Say we have:
+
+.. code-block::
+
+    walk.step = 0.05
+
+Depending on the frame-rate if you we're to display the sprite every game loop, it should animate!
+Sadly i can't show you animation, but here is an example code for you to try and run!
+
+.. code-block::
+
+    import pygameextra as pe
+    mario = pe.sprite.make(["mario_01.png", "mario_02.png", "mario_03.png", "mario_04.png"],(100,100),(0,0), 0)
+    mario.step = 0.1
+    while True:
+        for pe.event.c in pe.event.get():
+            pe.event.quitcheckauto()
+        pe.sprite.display(mario)
+        pe.display.update()
+        pe.time.tick(60)
