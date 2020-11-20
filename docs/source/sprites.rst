@@ -10,7 +10,7 @@ Here is the syntax, running this will return the sprite object:
 
 .. code-block:: python
 
-    sprite.make(imagef, size, position, rotation=0, layer=0)
+    pe.Sprite(imagef, size, position, rotation=0, layer=0)
 
 Now let's go over everything:
 
@@ -71,7 +71,7 @@ Let's put all that knowledge into making a sprite!
     import pygameextra as pe
     pe.display.make((500, 500), 'My Game')
     pe.fill.full((255,255,255))
-    crown = pe.sprite.make('example.jpeg',(100,100),(250,250), 70)
+    crown = pe.Sprite('example.jpeg',(100,100),(250,250), 70)
     crown.init(crown)
     while True:
       for pe.event.c in pe.event.get():
@@ -98,7 +98,7 @@ Say we have 4 walking animation frames:
 
 .. code-block:: python
 
-    walk = pe.sprite.make(["walk_01.png", "walk_02.png", "walk_03.png", "walk_04.png"],(100,100),(250,250), 0)
+    walk = pe.Sprite(["walk_01.png", "walk_02.png", "walk_03.png", "walk_04.png"],(100,100),(250,250), 0)
 
 By default the image to be frame will be the first frame, in this case, "walk_01.png", to set the frame manually we would do:
 
@@ -138,7 +138,7 @@ Sadly i can't show you animation, but here is an example code and images for you
 
     import pygameextra as pe
     pe.display.make((500,500), "Mario")
-    mario = pe.sprite.make(["mario_01.png", "mario_02.png", "mario_03.png", "mario_03.png", "mario_04.png"],(500,500),(0,0), 0)
+    mario = pe.Sprite(["mario_01.png", "mario_02.png", "mario_03.png", "mario_03.png", "mario_04.png"],(500,500),(0,0), 0)
     mario.step = 0.1
     while True:
         for pe.event.c in pe.event.get():
@@ -160,7 +160,7 @@ Say we have:
     walk.step = 0.05
     walk.pingpong = True
 
- Fact: for ping-pong to work the display function will allocate a variable to remember in witch way to pong, this variable is also known as the step multiplier or:
+Fact: for ping-pong to work the display function will allocate a variable to remember in witch way to pong, this variable is also known as the step multiplier or:
 
 .. code-block:: python
 
@@ -172,7 +172,7 @@ Here's a ball example:
 
     import pygameextra as pe
     pe.display.make((500,500), "Ball")
-    ball = pe.sprite.make(["ball_01.png", "ball_02.png", "ball_03.png", "ball_04.png"],(500,500),(0,0), 0)
+    ball = pe.Sprite(["ball_01.png", "ball_02.png", "ball_03.png", "ball_04.png", "ball_05.png", "ball_06.png", "ball_07.png", "ball_08.png", "ball_09.png", "ball_10.png", "ball_11.png"],(500,500),(0,0), 0)
     ball.step = 0.1
     ball.pingpong = True
     while True:

@@ -37,28 +37,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.dungeon">
-    <configuration name="PGE_pong(among worlds edition)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="source" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE pong among worlds" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE pong among worlds/PGE_pong(among worlds edition).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.testing">
     <configuration name="Pokit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="source" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,13 +122,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="source" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/testing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testing" />
         <item itemvalue="Python.dungeon" />
         <item itemvalue="Python.mario" />
         <item itemvalue="Python.layer_test" />
         <item itemvalue="Python.Pokit" />
-        <item itemvalue="Python.PGE_pong(among worlds edition)" />
       </list>
     </recent_temporary>
   </component>
@@ -181,22 +181,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1605810057658" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1605878678100">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1605889644496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605878678100" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1605878678100">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605889644496" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1605889644496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605878678100" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1605878678099">
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605889644496" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1605889644496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605878678099" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1605878678100">
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605889644496" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1605889644496">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605878678100" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605889644496" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605883802692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
