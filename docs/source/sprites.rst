@@ -87,6 +87,8 @@ Let's put all that knowledge into making a sprite!
 Animation
 +++++++++
 
+Let's look over everything we can do to animate sprites!
+
 Frames
 ------
 

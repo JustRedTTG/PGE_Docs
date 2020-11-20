@@ -37,7 +37,49 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Python.ellipse">
+  <component name="RunManager" selected="Python.layer_test">
+    <configuration name="PGE_pong(among worlds edition)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="source" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE pong among worlds" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE pong among worlds/PGE_pong(among worlds edition).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Pokit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="source" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE Pokit" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Game Projects/Python/PGE/PGE Pokit/Pokit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ellipse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="source" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,8 +124,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ellipse" />
         <item itemvalue="Python.layer_test" />
+        <item itemvalue="Python.Pokit" />
+        <item itemvalue="Python.PGE_pong(among worlds edition)" />
+        <item itemvalue="Python.ellipse" />
       </list>
     </recent_temporary>
   </component>
@@ -115,25 +159,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1605810057658" />
-    <state width="1345" height="2" key="GridCell.Tab.0.bottom" timestamp="1605813696773">
+    <state width="1345" height="249" key="GridCell.Tab.0.bottom" timestamp="1605866543049">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605813696773" />
-    <state width="1345" height="2" key="GridCell.Tab.0.center" timestamp="1605813696773">
+    <state width="1345" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605866543049" />
+    <state width="1345" height="249" key="GridCell.Tab.0.center" timestamp="1605866543049">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605813696773" />
-    <state width="1345" height="2" key="GridCell.Tab.0.left" timestamp="1605813696773">
+    <state width="1345" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605866543049" />
+    <state width="1345" height="249" key="GridCell.Tab.0.left" timestamp="1605866543048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605813696773" />
-    <state width="1345" height="2" key="GridCell.Tab.0.right" timestamp="1605813696773">
+    <state width="1345" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605866543048" />
+    <state width="1345" height="249" key="GridCell.Tab.0.right" timestamp="1605866543049">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="2" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605813696773" />
-    <state x="346" y="49" key="search.everywhere.popup" timestamp="1605812263687">
+    <state width="1345" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605866543049" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605864215418">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605812263687" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605864215418" />
   </component>
 </project>
