@@ -125,6 +125,18 @@ Say we have:
 Depending on the frame-rate if you we're to display the sprite every game loop, it should animate!
 Sadly i can't show you animation, but here is an example code for you to try and run!
 
+.. image:: _static/mario_01.png
+    :align: right
+
+.. image:: _static/mario_02.png
+    :align: right
+
+.. image:: _static/mario_03.png
+    :align: right
+
+.. image:: _static/mario_04.png
+    :align: right
+
 .. code-block::
 
     import pygameextra as pe
