@@ -44,7 +44,7 @@
       <recent name="\\192.168.0.109\Shared\Nyden\Game Projects\Python\PGE" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ball">
+  <component name="RunManager" selected="Python.testing">
     <configuration name="ball" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="source" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ball" />
         <item itemvalue="Python.testing" />
+        <item itemvalue="Python.ball" />
         <item itemvalue="Python.dungeon" />
         <item itemvalue="Python.mario" />
         <item itemvalue="Python.layer_test" />
@@ -188,22 +188,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="421" y="188" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1605810057658" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1605953087379">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1605963455834">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605953087379" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1605953087378">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605963455834" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1605963455833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605953087378" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1605953087378">
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605963455833" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1605963455833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605953087378" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1605953087378">
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605963455833" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1605963455833">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605953087378" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605963455833" />
     <state width="1345" height="223" key="GridCell.Tab.1.bottom" timestamp="1605950972320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,9 +220,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1605950972320" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605883802692">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605957677893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605883802692" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605957677893" />
   </component>
 </project>
