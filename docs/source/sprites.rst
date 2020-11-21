@@ -219,3 +219,18 @@ If you already have a loaded image and would like to use it for a sprite, you ca
 
     ball_i = pe.image.load("ball_01.png"...)
     ball = pe.Sprite(ball_i...)
+
+Note: once a image or file path is suplied you can't change to the other, aka this would return an error:
+
+.. code-block:: python
+
+    ball_i = pe.image.load("ball_01.png"...)
+    ball = pe.Sprite([ball_i,"ball_02.png"]...)
+
+And this will also return an error:
+
+.. code-block:: python
+
+    ball_i = pe.image.load("ball_02.png"...)
+    ball = pe.Sprite(["ball_01.png", ball_i]...)
+
