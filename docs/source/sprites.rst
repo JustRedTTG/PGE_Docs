@@ -43,23 +43,23 @@ There's something very important to keep in mind, when you edit a sprite's varia
 
 .. code-block:: python
 
-    spriteOBJ.init(spriteOBJ)
+    spriteOBJ.init()
     
 If you don't want to init the entire sprite that's fine, there's an init for everything separately!
 
 .. code-block:: python
 
-    spriteOBJ.init_rotation(spriteOBJ)
+    spriteOBJ.init_rotation()
 
 .. code-block:: python
 
-    spriteOBJ.init_position(spriteOBJ)
+    spriteOBJ.init_position()
 
 All sprite inits return the "new" aka "spriteOBJ.new" variable, witch has been updated, from there you can display it with:
 
 .. code-block:: python
 
-    spriteOBJ.display(spriteOBJ)
+    spriteOBJ.display()
 
 Making and Displaying
 ---------------------
@@ -72,11 +72,11 @@ Let's put all that knowledge into making a sprite!
     pe.display.make((500, 500), 'My Game')
     pe.fill.full((255,255,255))
     crown = pe.Sprite('example.jpeg',(100,100),(250,250), 70)
-    crown.init(crown)
+    crown.init()
     while True:
       for pe.event.c in pe.event.get():
         pe.event.quitcheckauto()
-      crown.display(crown)
+      crown.display()
       pe.display.update()
     pe.quit()
     quit()
@@ -144,7 +144,7 @@ Sadly i can't show you animation, but here is an example code and images for you
         for pe.event.c in pe.event.get():
             pe.event.quitcheckauto()
         pe.fill.full(pe.color.white)
-        mario.display(mario)
+        mario.display()
         pe.display.update()
         pe.time.tick(60)
 
@@ -194,8 +194,6 @@ Here's a ball example:
 
 .. image:: _static/ball/ball_11.png
 
-See :download:`download the example here: </_static/example/pe.sprite-ball-example.zip>`.
-
 .. code-block:: python
 
     import pygameextra as pe
@@ -208,6 +206,6 @@ See :download:`download the example here: </_static/example/pe.sprite-ball-examp
         for pe.event.c in pe.event.get():
             pe.event.quitcheckauto()
         pe.fill.full(pe.color.white)
-        ball.display(ball)
+        ball.display()
         pe.display.update()
         pe.time.tick(60)
