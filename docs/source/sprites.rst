@@ -215,4 +215,7 @@ Sprite from image
 
 If you already have a loaded image and would like to use it for a sprite, you can simply supply it!
 
-.. code-block::
+.. code-block:: python
+
+    ball_i = pe.image.load("ball_01.png"...)
+    ball = pe.Sprite(ball_i...)
