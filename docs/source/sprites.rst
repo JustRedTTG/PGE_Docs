@@ -209,3 +209,10 @@ Here's a ball example:
         ball.display()
         pe.display.update()
         pe.time.tick(60)
+
+Sprite from image
+-----------------
+
+If you already have a loaded image and would like to use it for a sprite, you can simply supply it!
+
+.. code-block::
