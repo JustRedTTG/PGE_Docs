@@ -11,7 +11,7 @@ Let's look at how to make a simple text
 
 .. code-block:: python
     
-    pe.text.quick.small('TEXT', position)
+    pe.text.quick.small('TEXT', position, layer=0)
     
 Here you have to understand that when we put our text at say ``(0, 0)`` we put the center of our text at ``(0, 0)``.
 To avoid the text from going off screen or such we can use ``pe.math.center``, let's see how, we'd do that!
@@ -20,7 +20,7 @@ To avoid the text from going off screen or such we can use ``pe.math.center``, l
 
     import pygameextra as pe
     pe.display.make((500, 500), 'My Game')
-    text = pe.text.quick.small('TEXT', pe.math.center((0, 0, 500, 500)))
+    text = pe.text.quick.small('TEXT', pe.math.center((0, 0, 500, 500), layer=0))
     pe.fill.full(pe.color.white)
     while True:
       for pe.event.c in pe.event.get():
@@ -34,10 +34,10 @@ To avoid the text from going off screen or such we can use ``pe.math.center``, l
     
 As you can see the text is now centered in the middle of our screen, if you wish to get bigger sizes or set a custom size here's how:
 
-* pe.text.quick.small('small TEXT', position)
-* pe.text.quick.medium('medium TEXT', position)
-* pe.text.quick.large('large TEXT', position)
-* pe.text.quick.make('custom TEXT', fontsize, position)
+* pe.text.quick.small('small TEXT', position, layer=0)
+* pe.text.quick.medium('medium TEXT', position, layer=0)
+* pe.text.quick.large('large TEXT', position, layer=0)
+* pe.text.quick.make('custom TEXT', fontsize, position, layer=0)
 
 Also do note that you can make much more detailed texts by either editing the quick texts or simply making a normal text!
 
@@ -65,7 +65,7 @@ Here is the syntax:
 
 .. code-block:: python
 
-    pe.text.make(text, font, fontsize, position, colors)
+    pe.text.make(text, font, fontsize, position, colors, layer=0)
     
 You'll notice the color and background are merged into the variable colors!
 
@@ -98,7 +98,7 @@ For this example let's say we have example.jpeg, let's look at the syntax:
 
 .. code-block:: python
 
-    pe.image.load(file, size, position)
+    pe.image.load(file, size, position, layer=0)
 
 * file - the image path
 * size - the size the image will display as
@@ -140,8 +140,8 @@ Let's start with the syntax for both buttons, it's pretty much the same:
 
 .. code-block:: python
 
-    pe.button.rect(rect,ic,ac,Text,action,data,tmp)
-    pe.button.image(rect,ic,ac,action,data,tmp)
+    pe.button.rect(rect, ic, ac, Text, action, data, tmp, layer=0)
+    pe.button.image(rect, ic, ac, action, data, tmp, layer=0)
 
 Ok let's go over everything one by one, starting with the rect button.
 
