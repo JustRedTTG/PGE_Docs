@@ -240,9 +240,11 @@ SpriteSheet Animation
 Using a sprite sheet for sprite animation is very easy, but first we need to determine the type of sprite sheet animation, let's look at the 2 types of sprite sheet animation PGE can read:
 
 .. image:: _static/rows.png
+    :align: center
 
 Rows
 
 .. image:: _static/columns.png
+    :align: center
 
 and Columns
