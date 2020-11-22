@@ -18,4 +18,19 @@ It's very easy to toggle layers, to do so:
 
 If you disable a layer all drawing functions that target that layer will be stopped!
 
-Here are all the PGE functions that use layers
+Here are all the PGE functions that use layers:
+
+.. code-block:: python
+
+    pe.fill.full(layer=0)
+    pe.draw.line(layer=0)
+    pe.draw.rect(layer=0)
+    pe.draw.circle(layer=0)
+    pe.draw.ellipse(layer=0)
+    pe.Sprite(layer=0)
+    pe.text.make(layer=0)
+    pe.image.display(layer=0)
+    pe.button.rect(layer=0)
+    pe.button.image(layer=0)
+    pe.slider.normal(layer=0)
+    pe.slider.boxed(layer=0)
