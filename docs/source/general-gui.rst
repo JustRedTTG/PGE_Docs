@@ -261,8 +261,8 @@ There's actually two types of sliders, the normal slider and the boxed slider, l
 
 .. code-block:: python
 
-    pe.slider.normal(rect, imageS, minS, maxS, current, back, color, w, enableT, colorT, wT)
-    pe.slider.boxed(rect, imageS, minS, maxS, current, back, lineout, color, enableT, colorT)
+    pe.slider.normal(rect, imageS, minS, maxS, current, back, color, w, enableT, colorT, wT, layer=0)
+    pe.slider.boxed(rect, imageS, minS, maxS, current, back, lineout, color, enableT, colorT, layer=0)
     
 Phew! a lot to take in huh, let's go over everything one by one:
 
