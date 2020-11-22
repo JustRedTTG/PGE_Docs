@@ -220,7 +220,7 @@ If you already have a loaded image and would like to use it for a sprite, you ca
     ball_i = pe.image.load("ball_01.png"...)
     ball = pe.Sprite(ball_i...)
 
-Note: once a image or file path is suplied you can't change to the other, aka this would return an error:
+Note: once a image or file path is supplied you can't change to the other, aka this would return an error:
 
 .. code-block:: python
 
@@ -234,3 +234,11 @@ And this will also return an error:
     ball_i = pe.image.load("ball_02.png"...)
     ball = pe.Sprite(["ball_01.png", ball_i]...)
 
+SpriteSheet Animation
+---------------------
+
+Using a sprite sheet for sprite animation is very easy, but first we need to determine the type of sprite sheet animation, let's look at the 2 types of sprite sheet animation PGE can read:
+
+.. image:: _static/rows.png
+
+.. image:: _static/columns.png
