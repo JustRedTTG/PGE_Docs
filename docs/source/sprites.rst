@@ -108,7 +108,7 @@ By default the image to be frame will be the first frame, in this case, "walk_01
 
 That's great, now when you want to display it, the selected frame will be displayed.
 
-Note: even though the frames are stored in a list starting with 0, the first frame is 1, and when displayed it will be subtracted to 0!
+**Note**: even though the frames are stored in a list starting with 0, the first frame is 1, and when displayed it will be subtracted to 0!
 
 Stepping
 ++++++++
@@ -220,7 +220,7 @@ If you already have a loaded image and would like to use it for a sprite, you ca
     ball_i = pe.image.load("ball_01.png"...)
     ball = pe.Sprite(ball_i...)
 
-Note: once a image or file path is supplied you can't change to the other, aka this would return an error:
+**Note**: once a image or file path is supplied you can't change to the other, aka this would return an error:
 
 .. code-block:: python
 
