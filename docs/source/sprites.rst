@@ -241,4 +241,8 @@ Using a sprite sheet for sprite animation is very easy, but first we need to det
 
 .. image:: _static/rows.png
 
+Rows
+
 .. image:: _static/columns.png
+
+and Columns
