@@ -246,3 +246,42 @@ Using a sprite sheet for sprite animation is very easy, but first we need to det
 .. image:: _static/columns.png
 
 and **Columns**
+
+In Pygame Extra, these types are know as
+
+.. code-block:: python
+
+    pe.sheet.rows
+    pe.sheet.columns
+
+So how do we use this to make a sprite sheet animated sprite?
+
+With Rows
++++++++++
+
+Loading a rows based sprite image is easy, we simply supply it to a sprite:
+
+.. code-block:: python
+
+    pe.Sprite(pe.sheet(file, cellsize, pe.sheet.rows, offset)...)
+
+The syntax:
+
+* file - the sprite sheet image file
+* cellsize - the size of each
+* offset - the sprite sheet offset, leaving this empty is recommended
+
+With Columns
++++++++++
+
+Loading a rows based sprite image is easy, we simply supply it to a sprite:
+
+.. code-block:: python
+
+    pe.Sprite(pe.sheet(file, cellsize, pe.sheet.columns, offset)...)
+
+The syntax:
+
+* file - the sprite sheet image file
+* cellsize - the size of each
+* offset - the sprite sheet offset, leaving this empty is recommended
