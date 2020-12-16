@@ -6,28 +6,6 @@ Welcome to the Pygame Extra docs!
 .. image:: _static/logo.png
     :align: center
 
-Usage
------
+The Pygame Extra 1.6.5 docs are closed for reworking, there are active tutorials witch should be helpful during this time: https://youtube.com/playlist?list=PLbFxKb92xP-nQVVp9Y5zSPpL21fEmZYUP
 
-Pygame Extra also known as PGE is sort of like a IDLE for pygame, but instead of using pygame directly, we just import PGE.
-
-From there PGE makes almost every line shorter.
-
-PGE can be used even by beginners, if your one, then welcome to the team, we hope PGE makes your life and learning experience easier!
-
-Installation
-------------
-
-To install Pygame Extra simply type this into your shell / terminal:
-
-.. code-block:: bash
-    
-    pip3 install pygameextra
-
-After the installation you can do the following to test if Pygame Extra is installed correctly:
-
-.. code-block:: python
-
-    import pygameextra as pe
-
-You should see the welcoming message.
+If you wish to help the docs get back on their feet, then contrubute, get more info about contrubuting in our discord: https://discord.gg/8CKtZpYrdj
